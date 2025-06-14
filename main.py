@@ -71,6 +71,13 @@ async def send_question(message: Message, state: FSMContext):
 @dp.callback_query(F.data.startswith("answer_"))
 async def handle_answer(callback, state: FSMContext):
     data = await state.get_data()
+    if "current" not in data or "answers" not in data:
+        await callback.answer("Сессия устарела. Пожалуйста, начни тест заново.", show_alert=True)
+        keyboard = InlineKeyboardMarkup(inline_keyboard=[
+            [InlineKeyboardButton(text="📜 Начать хронику", callback_data="start_quiz")]
+        ])
+        await callback.message.answer("🔁 Нажми кнопку ниже, чтобы начать заново:", reply_markup=keyboard)
+        return
     current = data["current"]
     selected = int(callback.data.split("_")[1])
     q = questions[current]
