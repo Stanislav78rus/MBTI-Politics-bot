@@ -1,0 +1,1215 @@
+[
+  {
+    "id": 1,
+    "scale": "IE",
+    "text": "После трёхдневной конференции по вопросам мировой безопасности вас приглашают принять участие в закрытом вечернем круглом столе с главами делегаций. Обстановка неформальная, но влияние — колоссальное.",
+    "options": [
+      {
+        "text": "Уезжаете в резиденцию. Ваше участие было исчерпывающим, теперь — время для анализа и тишины.",
+        "effects": {
+          "I": 2,
+          "E": -2
+        },
+        "political_effects": {
+          "Angela Merkel": 1,
+          "Vladimir Lenin": 1
+        },
+        "archetype": "INTJ"
+      },
+      {
+        "text": "Соглашаетесь приехать на короткое время, держась в стороне от оживлённых дискуссий.",
+        "effects": {
+          "I": 1,
+          "E": -1
+        },
+        "political_effects": {
+          "Mahatma Gandhi": 1
+        },
+        "archetype": "INFJ"
+      },
+      {
+        "text": "Присутствуете, внимательно слушаете, вступаете в разговоры, если тема особенно важна.",
+        "effects": {
+          "I": 0,
+          "E": 0
+        },
+        "political_effects": {
+          "Dwight Eisenhower": 1
+        },
+        "archetype": "ISTJ"
+      },
+      {
+        "text": "Используете возможность укрепить связи, обсуждая ключевые темы с разными группами.",
+        "effects": {
+          "I": -1,
+          "E": 1
+        },
+        "political_effects": {
+          "Barack Obama": 1,
+          "Martin Luther King Jr.": 1
+        },
+        "archetype": "ENFJ"
+      },
+      {
+        "text": "Ловите ритм зала, ведёте диалог, жестикулируете, направляете разговоры — энергия кипит.",
+        "effects": {
+          "I": -2,
+          "E": 2
+        },
+        "political_effects": {
+          "Theodore Roosevelt": 1,
+          "Boris Johnson": 1
+        },
+        "archetype": "ENTP"
+      }
+    ]
+  }
+,
+  {
+    "id": 2,
+    "scale": "SN",
+    "text": "Советник приносит вам отчёт о колебаниях настроений в регионах: статистика, слухи, разведданные. Пока нет ни открытых выступлений, ни официальных угроз. Но нечто надвигается.",
+    "options": [
+      {
+        "text": "Просите подтвердить источники информации и собрать дополнительные данные до принятия мер.",
+        "effects": {"S": 2, "N": -2},
+        "political_effects": {"Dwight Eisenhower": 1},
+        "archetype": "ISTJ"
+      },
+      {
+        "text": "Сравниваете ситуацию с предыдущими кризисами, ищете конкретные сигналы, указывающие на риск.",
+        "effects": {"S": 1, "N": -1},
+        "political_effects": {"Elizabeth II": 1},
+        "archetype": "ISFJ"
+      },
+      {
+        "text": "Формулируете рабочую гипотезу, собираете группу для мозгового штурма и прогнозов.",
+        "effects": {"S": 0, "N": 0},
+        "political_effects": {"Thomas Jefferson": 1},
+        "archetype": "INTP"
+      },
+      {
+        "text": "Подозреваете, что за мелкими признаками скрывается структурный сдвиг — нужно действовать превентивно.",
+        "effects": {"S": -1, "N": 1},
+        "political_effects": {"Nelson Mandela": 1},
+        "archetype": "INFJ"
+      },
+      {
+        "text": "Ищете символическое или идеологическое объяснение происходящему — система даёт трещину?",
+        "effects": {"S": -2, "N": 2},
+        "political_effects": {"Angela Merkel": 1},
+        "archetype": "INTJ"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "scale": "TF",
+    "text": "Ваша страна принимает беженцев из соседнего региона. Социологи предупреждают: это вызовет напряжение в обществе. Экономисты считают: программа приёма убыточна. Однако давление международного сообщества растёт.",
+    "options": [
+      {
+        "text": "Отвергаете программу — интересы государства и бюджета превыше эмоций.",
+        "effects": {"T": 2, "F": -2},
+        "political_effects": {"Joseph Stalin": 1},
+        "archetype": "ESTJ"
+      },
+      {
+        "text": "Предлагаете реформу: приём только тех, кто сможет быстро интегрироваться.",
+        "effects": {"T": 1, "F": -1},
+        "political_effects": {"Angela Merkel": 1},
+        "archetype": "INTJ"
+      },
+      {
+        "text": "Создаёте ограниченную систему поддержки, чтобы соблюсти баланс между интересами и гуманностью.",
+        "effects": {"T": 0, "F": 0},
+        "political_effects": {"Jimmy Carter": 1},
+        "archetype": "ISFJ"
+      },
+      {
+        "text": "Ищете решение, которое покажет заботу и моральное лидерство, даже если оно невыгодно.",
+        "effects": {"T": -1, "F": 1},
+        "political_effects": {"Barack Obama": 1},
+        "archetype": "ENFJ"
+      },
+      {
+        "text": "Выступаете с эмоциональным обращением — человеческая жизнь важнее всего, страна должна показать сострадание.",
+        "effects": {"T": -2, "F": 2},
+        "political_effects": {"George Washington": 1},
+        "archetype": "INFP"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "scale": "JP",
+    "text": "На саммите ОЭС неожиданно отменяется выступление председателя. Вас просят срочно заменить его и представить свою позицию. До выхода — 10 минут.",
+    "options": [
+      {
+        "text": "Отказываетесь: неподготовленное выступление может подорвать авторитет.",
+        "effects": {"J": 2, "P": -2},
+        "political_effects": {"Joseph Stalin": 1},
+        "archetype": "ESTJ"
+      },
+      {
+        "text": "Просите коротко изложить главные тезисы, чтобы сориентироваться.",
+        "effects": {"J": 1, "P": -1},
+        "political_effects": {"Napoleon Bonaparte": 1},
+        "archetype": "ENTJ"
+      },
+      {
+        "text": "Делаете краткий набросок, фокусируясь на структуре и выводах.",
+        "effects": {"J": 0, "P": 0},
+        "political_effects": {"Francois Mitterrand": 1},
+        "archetype": "ENFJ"
+      },
+      {
+        "text": "Используете общую тему, импровизируете, опираясь на собственный опыт.",
+        "effects": {"J": -1, "P": 1},
+        "political_effects": {"John F. Kennedy": 1},
+        "archetype": "ENFP"
+      },
+      {
+        "text": "Идёте на сцену с открытым сердцем — важнее искренность, чем регламент.",
+        "effects": {"J": -2, "P": 2},
+        "political_effects": {"Silvio Berlusconi": 1},
+        "archetype": "ESFP"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "scale": "IE",
+    "text": "Во время международного саммита вас приглашают выступить с речью перед широкой аудиторией. Как вы поступите?",
+    "options": [
+      {
+        "text": "Откажетесь выступать, предпочитая подготовиться и выступить позже в более узком кругу.",
+        "effects": {"I": 2, "E": -2},
+        "political_effects": {"Angela Merkel": 1},
+        "archetype": "ISTJ"
+      },
+      {
+        "text": "Согласитесь выступить, но ограничитесь кратким и сдержанным сообщением.",
+        "effects": {"I": 1, "E": -1},
+        "political_effects": {"Mahatma Gandhi": 1},
+        "archetype": "INFJ"
+      },
+      {
+        "text": "Выступите уверенно и энергично, используя возможность донести свои идеи до широкой аудитории.",
+        "effects": {"I": -1, "E": 1},
+        "political_effects": {"Barack Obama": 1},
+        "archetype": "ENFJ"
+      },
+      {
+        "text": "Используете юмор и живые примеры, чтобы завоевать внимание и расположение слушателей.",
+        "effects": {"I": -2, "E": 2},
+        "political_effects": {"Theodore Roosevelt": 1},
+        "archetype": "ENTP"
+      },
+      {
+        "text": "Выступите, но предварительно обсудите с коллегами ключевые моменты и получите обратную связь.",
+        "effects": {"I": 0, "E": 0},
+        "political_effects": {"Dwight Eisenhower": 1},
+        "archetype": "ISTJ"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "scale": "SN",
+    "text": "Вы получаете доклад разведки о новых технологиях, которые могут изменить баланс сил. Как вы с этим работаете?",
+    "options": [
+      {
+        "text": "Требуете подробного технического анализа и подтверждения данных из разных источников.",
+        "effects": {"S": 2, "N": -2},
+        "political_effects": {"Dwight Eisenhower": 1},
+        "archetype": "ISTJ"
+      },
+      {
+        "text": "Сравниваете с предыдущими технологическими прорывами и оцениваете их влияние на будущее.",
+        "effects": {"S": 0, "N": 0},
+        "political_effects": {"Thomas Jefferson": 1},
+        "archetype": "INTP"
+      },
+      {
+        "text": "Обсуждаете с экспертами возможные сценарии и стратегические последствия.",
+        "effects": {"S": 1, "N": -1},
+        "political_effects": {"Elizabeth II": 1},
+        "archetype": "ISFJ"
+      },
+      {
+        "text": "Предлагаете инвестировать в инновации, опираясь на интуицию и долгосрочные тренды.",
+        "effects": {"S": -1, "N": 1},
+        "political_effects": {"Nelson Mandela": 1},
+        "archetype": "INFJ"
+      },
+      {
+        "text": "Интерпретируете данные как знак глобальных изменений и необходимости реформ.",
+        "effects": {"S": -2, "N": 2},
+        "political_effects": {"Angela Merkel": 1},
+        "archetype": "INTJ"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "scale": "TF",
+    "text": "В парламенте поднимается вопрос о сокращении социальных программ ради экономии бюджета. Что вы скажете?",
+    "options": [
+      {
+        "text": "Поддержите сокращения, считая, что экономическая стабильность важнее временной поддержки.",
+        "effects": {"T": 2, "F": -2},
+        "political_effects": {"Joseph Stalin": 1},
+        "archetype": "ESTJ"
+      },
+      {
+        "text": "Предложите компромисс, сохраняя помощь самым уязвимым группам.",
+        "effects": {"T": 0, "F": 0},
+        "political_effects": {"Jimmy Carter": 1},
+        "archetype": "ISFJ"
+      },
+      {
+        "text": "Выступите против сокращений, подчёркивая гуманитарные и моральные обязательства государства.",
+        "effects": {"T": -2, "F": 2},
+        "political_effects": {"George Washington": 1},
+        "archetype": "INFP"
+      },
+      {
+        "text": "Оцените экономические данные и предложите реформы, минимизирующие ущерб для населения.",
+        "effects": {"T": 1, "F": -1},
+        "political_effects": {"Angela Merkel": 1},
+        "archetype": "INTJ"
+      },
+      {
+        "text": "Сфокусируетесь на этических аргументах, призывая к социальной справедливости.",
+        "effects": {"T": -1, "F": 1},
+        "political_effects": {"Barack Obama": 1},
+        "archetype": "ENFJ"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "scale": "JP",
+    "text": "Ваша команда готовит план реформы, но сроки сжаты. Как вы организуете работу?",
+    "options": [
+      {
+        "text": "Составите чёткий план с дедлайнами и распределением задач, контролируя каждый этап.",
+        "effects": {"J": 2, "P": -2},
+        "political_effects": {"Joseph Stalin": 1},
+        "archetype": "ESTJ"
+      },
+      {
+        "text": "Дадите команде свободу действий, надеясь на их профессионализм и инициативу.",
+        "effects": {"J": -2, "P": 2},
+        "political_effects": {"Silvio Berlusconi": 1},
+        "archetype": "ESFP"
+      },
+      {
+        "text": "Определите ключевые приоритеты и адаптируете план по мере поступления новой информации.",
+        "effects": {"J": 0, "P": 0},
+        "political_effects": {"Francois Mitterrand": 1},
+        "archetype": "ENFJ"
+      },
+      {
+        "text": "Проведёте короткие совещания для координации и быстро примете решения при необходимости.",
+        "effects": {"J": 1, "P": -1},
+        "political_effects": {"Napoleon Bonaparte": 1},
+        "archetype": "ENTJ"
+      },
+      {
+        "text": "Будете импровизировать и искать новые пути решения по ходу работы, опираясь на опыт команды.",
+        "effects": {"J": -1, "P": 1},
+        "political_effects": {"John F. Kennedy": 1},
+        "archetype": "ENFP"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "scale": "IE",
+    "text": "В ходе переговоров по международному договору вы замечаете, что оппоненты избегают прямого контакта. Как вы реагируете?",
+    "options": [
+      {
+        "text": "Предпочитаете обдумать ситуацию в тишине, чтобы понять скрытые мотивы.",
+        "effects": {"I": 2, "E": -2},
+        "political_effects": {"Vladimir Lenin": 1},
+        "archetype": "INTJ"
+      },
+      {
+        "text": "Сохраняете спокойствие и наблюдаете, не вмешиваясь в разговоры без необходимости.",
+        "effects": {"I": 1, "E": -1},
+        "political_effects": {"Mahatma Gandhi": 1},
+        "archetype": "INFJ"
+      },
+      {
+        "text": "Активно вступаете в диалог, пытаясь наладить контакт и выяснить причины.",
+        "effects": {"I": -1, "E": 1},
+        "political_effects": {"Barack Obama": 1},
+        "archetype": "ENFJ"
+      },
+      {
+        "text": "Используете харизму и энергичные жесты, чтобы разрядить атмосферу и привлечь внимание.",
+        "effects": {"I": -2, "E": 2},
+        "political_effects": {"Theodore Roosevelt": 1},
+        "archetype": "ENTP"
+      },
+      {
+        "text": "Остаётесь в тени, аккуратно анализируя ситуацию и ожидая подходящего момента для действия.",
+        "effects": {"I": 0, "E": 0},
+        "political_effects": {"Dwight Eisenhower": 1},
+        "archetype": "ISTJ"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "scale": "SN",
+    "text": "Ваша разведка сообщает о новых социальных трендах, которые могут повлиять на выборы. Что вы сделаете?",
+    "options": [
+      {
+        "text": "Потребуете детального анализа данных и статистики, чтобы понять реальные изменения.",
+        "effects": {"S": 2, "N": -2},
+        "political_effects": {"Dwight Eisenhower": 1},
+        "archetype": "ISTJ"
+      },
+      {
+        "text": "Сравните с предыдущими выборами, выявляя закономерности и отклонения.",
+        "effects": {"S": 1, "N": -1},
+        "political_effects": {"Elizabeth II": 1},
+        "archetype": "ISFJ"
+      },
+      {
+        "text": "Обсудите с командой возможные сценарии развития и подготовите стратегию.",
+        "effects": {"S": 0, "N": 0},
+        "political_effects": {"Thomas Jefferson": 1},
+        "archetype": "INTP"
+      },
+      {
+        "text": "Примете во внимание интуитивные ощущения и символику этих трендов для будущих решений.",
+        "effects": {"S": -1, "N": 1},
+        "political_effects": {"Nelson Mandela": 1},
+        "archetype": "INFJ"
+      },
+      {
+        "text": "Воспринимаете эти тренды как знак глубоких перемен и необходимости реформ.",
+        "effects": {"S": -2, "N": 2},
+        "political_effects": {"Angela Merkel": 1},
+        "archetype": "INTJ"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "scale": "TF",
+    "text": "Обсуждается законопроект о защите прав меньшинств. Как вы голосуете?",
+    "options": [
+      {
+        "text": "Поддержите закон, исходя из принципов справедливости и равенства.",
+        "effects": {"T": -2, "F": 2},
+        "political_effects": {"George Washington": 1},
+        "archetype": "INFP"
+      },
+      {
+        "text": "Выразите сомнения, требуя дополнительного анализа экономических последствий.",
+        "effects": {"T": 1, "F": -1},
+        "political_effects": {"Angela Merkel": 1},
+        "archetype": "INTJ"
+      },
+      {
+        "text": "Предложите внести поправки, чтобы сбалансировать интересы всех сторон.",
+        "effects": {"T": 0, "F": 0},
+        "political_effects": {"Jimmy Carter": 1},
+        "archetype": "ISFJ"
+      },
+      {
+        "text": "Проголосуете против, считая, что закон может создать социальное напряжение.",
+        "effects": {"T": 2, "F": -2},
+        "political_effects": {"Joseph Stalin": 1},
+        "archetype": "ESTJ"
+      },
+      {
+        "text": "Поддержите закон, но с оговорками, учитывая разные точки зрения и компромиссы.",
+        "effects": {"T": -1, "F": 1},
+        "political_effects": {"Barack Obama": 1},
+        "archetype": "ENFJ"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "scale": "JP",
+    "text": "Ваша команда должна подготовить доклад за два дня, но есть риск недоработок. Что вы сделаете?",
+    "options": [
+      {
+        "text": "Организуете строгий график и ежедневный контроль за выполнением задач.",
+        "effects": {"J": 2, "P": -2},
+        "political_effects": {"Joseph Stalin": 1},
+        "archetype": "ESTJ"
+      },
+      {
+        "text": "Дадите команде свободу выбора методов, надеясь на их ответственность.",
+        "effects": {"J": -2, "P": 2},
+        "political_effects": {"Silvio Berlusconi": 1},
+        "archetype": "ESFP"
+      },
+      {
+        "text": "Подготовите общий план, но будете гибко реагировать на изменения и предложения.",
+        "effects": {"J": 0, "P": 0},
+        "political_effects": {"Francois Mitterrand": 1},
+        "archetype": "ENFJ"
+      },
+      {
+        "text": "Проведёте несколько коротких встреч для согласования и корректировки работы.",
+        "effects": {"J": 1, "P": -1},
+        "political_effects": {"Napoleon Bonaparte": 1},
+        "archetype": "ENTJ"
+      },
+      {
+        "text": "Позволите команде импровизировать, опираясь на их опыт и креативность.",
+        "effects": {"J": -1, "P": 1},
+        "political_effects": {"John F. Kennedy": 1},
+        "archetype": "ENFP"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "scale": "IE",
+    "text": "В разгар кризиса вас приглашают на телевизионное интервью. Как вы ведёте себя?",
+    "options": [
+      {
+        "text": "Откажетесь, предпочитая подготовиться и выступить позже с более продуманной речью.",
+        "effects": {"I": 2, "E": -2},
+        "political_effects": {"Angela Merkel": 1},
+        "archetype": "ISTJ"
+      },
+      {
+        "text": "Дадите короткие и взвешенные ответы, избегая излишней экспрессии.",
+        "effects": {"I": 1, "E": -1},
+        "political_effects": {"Mahatma Gandhi": 1},
+        "archetype": "INFJ"
+      },
+      {
+        "text": "Будете открыты и энергичны, стараясь завоевать доверие аудитории.",
+        "effects": {"I": -1, "E": 1},
+        "political_effects": {"Barack Obama": 1},
+        "archetype": "ENFJ"
+      },
+      {
+        "text": "Используете яркие примеры и юмор, чтобы привлечь внимание и расположить зрителей.",
+        "effects": {"I": -2, "E": 2},
+        "political_effects": {"Theodore Roosevelt": 1},
+        "archetype": "ENTP"
+      },
+      {
+        "text": "Отвечаете сдержанно, внимательно слушая вопросы и обдумывая ответы.",
+        "effects": {"I": 0, "E": 0},
+        "political_effects": {"Dwight Eisenhower": 1},
+        "archetype": "ISTJ"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "scale": "SN",
+    "text": "Получаете доклад о текущей экономической ситуации и прогнозах. Что для вас важнее?",
+    "options": [
+      {
+        "text": "Фактические данные и текущие показатели, чтобы принимать решения на основе реальности.",
+        "effects": {"S": 2, "N": -2},
+        "political_effects": {"Dwight Eisenhower": 1},
+        "archetype": "ISTJ"
+      },
+      {
+        "text": "Анализ долгосрочных тенденций и возможных изменений в будущем.",
+        "effects": {"S": -2, "N": 2},
+        "political_effects": {"Angela Merkel": 1},
+        "archetype": "INTJ"
+      },
+      {
+        "text": "Сравнение с прошлыми экономическими циклами и уроками из истории.",
+        "effects": {"S": 1, "N": -1},
+        "political_effects": {"Elizabeth II": 1},
+        "archetype": "ISFJ"
+      },
+      {
+        "text": "Обсуждение с экспертами и поиск новых идей для адаптации к изменениям.",
+        "effects": {"S": 0, "N": 0},
+        "political_effects": {"Thomas Jefferson": 1},
+        "archetype": "INTP"
+      },
+      {
+        "text": "Интуитивное восприятие ситуации и поиск символов перемен в экономике.",
+        "effects": {"S": -1, "N": 1},
+        "political_effects": {"Nelson Mandela": 1},
+        "archetype": "INFJ"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "scale": "TF",
+    "text": "Ваша страна сталкивается с протестами из-за новых законов. Как вы реагируете?",
+    "options": [
+      {
+        "text": "Жёстко подавляете протесты, считая порядок важнее эмоций и требований меньшинств.",
+        "effects": {"T": 2, "F": -2},
+        "political_effects": {"Joseph Stalin": 1},
+        "archetype": "ESTJ"
+      },
+      {
+        "text": "Пытаетесь найти компромисс, учитывая как экономические, так и социальные аспекты.",
+        "effects": {"T": 0, "F": 0},
+        "political_effects": {"Jimmy Carter": 1},
+        "archetype": "ISFJ"
+      },
+      {
+        "text": "Выражаете поддержку протестующим, подчеркивая важность человеческих прав.",
+        "effects": {"T": -2, "F": 2},
+        "political_effects": {"George Washington": 1},
+        "archetype": "INFP"
+      },
+      {
+        "text": "Предлагаете реформы, основанные на рациональном анализе причин протестов.",
+        "effects": {"T": 1, "F": -1},
+        "political_effects": {"Angela Merkel": 1},
+        "archetype": "INTJ"
+      },
+      {
+        "text": "Поддерживаете диалог с протестующими, проявляя эмпатию и понимание.",
+        "effects": {"T": -1, "F": 1},
+        "political_effects": {"Barack Obama": 1},
+        "archetype": "ENFJ"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "scale": "JP",
+    "text": "Вам нужно принять решение о срочном законопроекте с недостаточной информацией. Что вы сделаете?",
+    "options": [
+      {
+        "text": "Отложите решение, требуя больше данных и времени для анализа.",
+        "effects": {"J": 2, "P": -2},
+        "political_effects": {"Joseph Stalin": 1},
+        "archetype": "ESTJ"
+      },
+      {
+        "text": "Примете решение на основе имеющейся информации, полагаясь на интуицию и опыт.",
+        "effects": {"J": -1, "P": 1},
+        "political_effects": {"John F. Kennedy": 1},
+        "archetype": "ENFP"
+      },
+      {
+        "text": "Составите план действий с возможностью корректировки по мере поступления новой информации.",
+        "effects": {"J": 0, "P": 0},
+        "political_effects": {"Francois Mitterrand": 1},
+        "archetype": "ENFJ"
+      },
+      {
+        "text": "Проведёте консультации с экспертами и коллегами для принятия взвешенного решения.",
+        "effects": {"J": 1, "P": -1},
+        "political_effects": {"Napoleon Bonaparte": 1},
+        "archetype": "ENTJ"
+      },
+      {
+        "text": "Действуете быстро и решительно, не боясь рисков и изменений.",
+        "effects": {"J": -2, "P": 2},
+        "political_effects": {"Silvio Berlusconi": 1},
+        "archetype": "ESFP"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "scale": "IE",
+    "text": "На закрытом совещании вам предлагают представить альтернативное мнение, отличное от большинства. Как вы поступите?",
+    "options": [
+      {
+        "text": "Предпочитаете подготовить письменное замечание и передать его без выступления.",
+        "effects": {"I": 2, "E": -2},
+        "political_effects": {"Angela Merkel": 1},
+        "archetype": "INTJ"
+      },
+      {
+        "text": "Выразите своё мнение тихо и сдержанно, избегая конфронтации.",
+        "effects": {"I": 1, "E": -1},
+        "political_effects": {"Mahatma Gandhi": 1},
+        "archetype": "INFJ"
+      },
+      {
+        "text": "Активно и аргументированно отстаиваете свою позицию, даже если это вызывает споры.",
+        "effects": {"I": -1, "E": 1},
+        "political_effects": {"Barack Obama": 1},
+        "archetype": "ENFJ"
+      },
+      {
+        "text": "Используете харизму и энергетику, чтобы убедить коллег в своей точке зрения.",
+        "effects": {"I": -2, "E": 2},
+        "political_effects": {"Theodore Roosevelt": 1},
+        "archetype": "ENTP"
+      },
+      {
+        "text": "Слушаете других, анализируете ситуацию и высказываетесь только при необходимости.",
+        "effects": {"I": 0, "E": 0},
+        "political_effects": {"Dwight Eisenhower": 1},
+        "archetype": "ISTJ"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "scale": "SN",
+    "text": "Вам предоставляют отчёт о новых международных тенденциях в политике. Что вы сделаете?",
+    "options": [
+      {
+        "text": "Требуете подробного анализа и фактических данных для принятия решений.",
+        "effects": {"S": 2, "N": -2},
+        "political_effects": {"Dwight Eisenhower": 1},
+        "archetype": "ISTJ"
+      },
+      {
+        "text": "Обсудите с экспертами возможные сценарии и стратегические последствия.",
+        "effects": {"S": 1, "N": -1},
+        "political_effects": {"Elizabeth II": 1},
+        "archetype": "ISFJ"
+      },
+      {
+        "text": "Сравните с историческими примерами и сделаете выводы для будущих действий.",
+        "effects": {"S": 0, "N": 0},
+        "political_effects": {"Thomas Jefferson": 1},
+        "archetype": "INTP"
+      },
+      {
+        "text": "Ориентируетесь на интуицию и общую картину, предвидя возможные изменения.",
+        "effects": {"S": -1, "N": 1},
+        "political_effects": {"Nelson Mandela": 1},
+        "archetype": "INFJ"
+      },
+      {
+        "text": "Воспринимаете информацию как сигнал для реформ и инноваций.",
+        "effects": {"S": -2, "N": 2},
+        "political_effects": {"Angela Merkel": 1},
+        "archetype": "INTJ"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "scale": "TF",
+    "text": "В парламенте обсуждается закон о свободе слова, который может вызвать споры. Как вы голосуете?",
+    "options": [
+      {
+        "text": "Поддержите закон, считая свободу слова фундаментальным правом.",
+        "effects": {"T": -2, "F": 2},
+        "political_effects": {"George Washington": 1},
+        "archetype": "INFP"
+      },
+      {
+        "text": "Предложите ограничения для предотвращения распространения опасной информации.",
+        "effects": {"T": 2, "F": -2},
+        "political_effects": {"Joseph Stalin": 1},
+        "archetype": "ESTJ"
+      },
+      {
+        "text": "Выразите необходимость сбалансированного подхода с учётом всех рисков.",
+        "effects": {"T": 0, "F": 0},
+        "political_effects": {"Jimmy Carter": 1},
+        "archetype": "ISFJ"
+      },
+      {
+        "text": "Оцените последствия закона с точки зрения прав и обязанностей граждан.",
+        "effects": {"T": 1, "F": -1},
+        "political_effects": {"Angela Merkel": 1},
+        "archetype": "INTJ"
+      },
+      {
+        "text": "Поддержите закон, призывая к ответственности и уважению в обществе.",
+        "effects": {"T": -1, "F": 1},
+        "political_effects": {"Barack Obama": 1},
+        "archetype": "ENFJ"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "scale": "JP",
+    "text": "Вам нужно организовать международную конференцию за короткий срок. Как вы поступите?",
+    "options": [
+      {
+        "text": "Составите подробный план с чётким расписанием и распределением обязанностей.",
+        "effects": {"J": 2, "P": -2},
+        "political_effects": {"Joseph Stalin": 1},
+        "archetype": "ESTJ"
+      },
+      {
+        "text": "Позволите команде самостоятельно организовать процесс, контролируя ключевые моменты.",
+        "effects": {"J": 0, "P": 0},
+        "political_effects": {"Francois Mitterrand": 1},
+        "archetype": "ENFJ"
+      },
+      {
+        "text": "Оставите пространство для импровизации, рассчитывая на креативность и опыт коллег.",
+        "effects": {"J": -2, "P": 2},
+        "political_effects": {"Silvio Berlusconi": 1},
+        "archetype": "ESFP"
+      },
+      {
+        "text": "Проведёте регулярные совещания для координации и быстрого принятия решений.",
+        "effects": {"J": 1, "P": -1},
+        "political_effects": {"Napoleon Bonaparte": 1},
+        "archetype": "ENTJ"
+      },
+      {
+        "text": "Будете гибко реагировать на изменения, адаптируя план по ходу подготовки.",
+        "effects": {"J": -1, "P": 1},
+        "political_effects": {"John F. Kennedy": 1},
+        "archetype": "ENFP"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "scale": "IE",
+    "text": "Во время дипломатической встречи вы замечаете, что оппонент избегает зрительного контакта. Как вы поступите?",
+    "options": [
+      {
+        "text": "Сосредоточитесь на анализе невербальных сигналов в тишине, не вмешиваясь в разговор.",
+        "effects": {"I": 2, "E": -2},
+        "political_effects": {"Vladimir Lenin": 1},
+        "archetype": "INTJ"
+      },
+      {
+        "text": "Сдержанно зададите уточняющие вопросы, стараясь понять причины поведения.",
+        "effects": {"I": 1, "E": -1},
+        "political_effects": {"Mahatma Gandhi": 1},
+        "archetype": "INFJ"
+      },
+      {
+        "text": "Попытаетесь установить контакт через открытые жесты и прямое общение.",
+        "effects": {"I": -1, "E": 1},
+        "political_effects": {"Barack Obama": 1},
+        "archetype": "ENFJ"
+      },
+      {
+        "text": "Используете энергичную речь и жестикуляцию, чтобы привлечь внимание и расположить оппонента.",
+        "effects": {"I": -2, "E": 2},
+        "political_effects": {"Theodore Roosevelt": 1},
+        "archetype": "ENTP"
+      },
+      {
+        "text": "Останетесь в стороне, наблюдая и собирая информацию для последующих действий.",
+        "effects": {"I": 0, "E": 0},
+        "political_effects": {"Dwight Eisenhower": 1},
+        "archetype": "ISTJ"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "scale": "SN",
+    "text": "Получаете доклад о новых экономических индикаторах. Как вы используете эту информацию?",
+    "options": [
+      {
+        "text": "Опираетесь на точные цифры и факты, чтобы принимать решения здесь и сейчас.",
+        "effects": {"S": 2, "N": -2},
+        "political_effects": {"Dwight Eisenhower": 1},
+        "archetype": "ISTJ"
+      },
+      {
+        "text": "Анализируете тенденции и прогнозы для разработки долгосрочной стратегии.",
+        "effects": {"S": -2, "N": 2},
+        "political_effects": {"Angela Merkel": 1},
+        "archetype": "INTJ"
+      },
+      {
+        "text": "Сравниваете с историческими данными и учитесь на опыте прошлого.",
+        "effects": {"S": 1, "N": -1},
+        "political_effects": {"Elizabeth II": 1},
+        "archetype": "ISFJ"
+      },
+      {
+        "text": "Обсуждаете с экспертами различные сценарии и возможности развития событий.",
+        "effects": {"S": 0, "N": 0},
+        "political_effects": {"Thomas Jefferson": 1},
+        "archetype": "INTP"
+      },
+      {
+        "text": "Интуитивно чувствуете необходимость перемен и реформ в экономике.",
+        "effects": {"S": -1, "N": 1},
+        "political_effects": {"Nelson Mandela": 1},
+        "archetype": "INFJ"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "scale": "TF",
+    "text": "Обсуждается политика в отношении иммигрантов. Как вы выскажитесь?",
+    "options": [
+      {
+        "text": "Поддержите строгие меры, исходя из экономической выгоды и безопасности.",
+        "effects": {"T": 2, "F": -2},
+        "political_effects": {"Joseph Stalin": 1},
+        "archetype": "ESTJ"
+      },
+      {
+        "text": "Предложите программы интеграции, учитывая человеческий фактор и права человека.",
+        "effects": {"T": -2, "F": 2},
+        "political_effects": {"George Washington": 1},
+        "archetype": "INFP"
+      },
+      {
+        "text": "Сфокусируетесь на балансе интересов и предложите компромиссные решения.",
+        "effects": {"T": 0, "F": 0},
+        "political_effects": {"Jimmy Carter": 1},
+        "archetype": "ISFJ"
+      },
+      {
+        "text": "Оцените данные и предложите реформы, основанные на рациональном подходе.",
+        "effects": {"T": 1, "F": -1},
+        "political_effects": {"Angela Merkel": 1},
+        "archetype": "INTJ"
+      },
+      {
+        "text": "Выразите поддержку гуманитарным инициативам и диалогу с обществом.",
+        "effects": {"T": -1, "F": 1},
+        "political_effects": {"Barack Obama": 1},
+        "archetype": "ENFJ"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "scale": "JP",
+    "text": "Вам поручают руководить кризисным штабом с ограниченным временем на подготовку. Как вы действуете?",
+    "options": [
+      {
+        "text": "Разработаете чёткий план действий с распределением ролей и контролем исполнения.",
+        "effects": {"J": 2, "P": -2},
+        "political_effects": {"Joseph Stalin": 1},
+        "archetype": "ESTJ"
+      },
+      {
+        "text": "Дадите команде свободу принимать решения и адаптироваться к ситуации.",
+        "effects": {"J": -2, "P": 2},
+        "political_effects": {"Silvio Berlusconi": 1},
+        "archetype": "ESFP"
+      },
+      {
+        "text": "Организуете регулярные совещания для оценки ситуации и корректировки плана.",
+        "effects": {"J": 1, "P": -1},
+        "political_effects": {"Napoleon Bonaparte": 1},
+        "archetype": "ENTJ"
+      },
+      {
+        "text": "Составите общий план, но останетесь гибким и готовы к изменениям.",
+        "effects": {"J": 0, "P": 0},
+        "political_effects": {"Francois Mitterrand": 1},
+        "archetype": "ENFJ"
+      },
+      {
+        "text": "Позволите импровизировать, полагаясь на опыт и инициативу команды.",
+        "effects": {"J": -1, "P": 1},
+        "political_effects": {"John F. Kennedy": 1},
+        "archetype": "ENFP"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "scale": "IE",
+    "text": "Вас приглашают на закрытую встречу с лидерами оппозиции. Как вы себя ведёте?",
+    "options": [
+      {
+        "text": "Предпочитаете слушать и анализировать, не вступая в активные дискуссии.",
+        "effects": {"I": 2, "E": -2},
+        "political_effects": {"Angela Merkel": 1},
+        "archetype": "INTJ"
+      },
+      {
+        "text": "Выражаете свои мысли сдержанно, избегая конфликтов и резких заявлений.",
+        "effects": {"I": 1, "E": -1},
+        "political_effects": {"Mahatma Gandhi": 1},
+        "archetype": "INFJ"
+      },
+      {
+        "text": "Активно участвуете в обсуждениях, предлагая конструктивные решения.",
+        "effects": {"I": -1, "E": 1},
+        "political_effects": {"Barack Obama": 1},
+        "archetype": "ENFJ"
+      },
+      {
+        "text": "Используете харизму и энергичные выступления, чтобы повлиять на мнение оппонентов.",
+        "effects": {"I": -2, "E": 2},
+        "political_effects": {"Theodore Roosevelt": 1},
+        "archetype": "ENTP"
+      },
+      {
+        "text": "Оцениваете ситуацию внимательно, вмешиваясь только при необходимости.",
+        "effects": {"I": 0, "E": 0},
+        "political_effects": {"Dwight Eisenhower": 1},
+        "archetype": "ISTJ"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "scale": "SN",
+    "text": "Получаете доклад о новых технологических разработках в области обороны. Ваши действия?",
+    "options": [
+      {
+        "text": "Требуете подробного технического анализа и проверок достоверности данных.",
+        "effects": {"S": 2, "N": -2},
+        "political_effects": {"Dwight Eisenhower": 1},
+        "archetype": "ISTJ"
+      },
+      {
+        "text": "Оцениваете потенциал технологий с учётом долгосрочных стратегических целей.",
+        "effects": {"S": -2, "N": 2},
+        "political_effects": {"Angela Merkel": 1},
+        "archetype": "INTJ"
+      },
+      {
+        "text": "Обсуждаете возможности внедрения с экспертами и военными специалистами.",
+        "effects": {"S": 1, "N": -1},
+        "political_effects": {"Elizabeth II": 1},
+        "archetype": "ISFJ"
+      },
+      {
+        "text": "Сравниваете с историческими примерами и учитесь на опыте прошлого.",
+        "effects": {"S": 0, "N": 0},
+        "political_effects": {"Thomas Jefferson": 1},
+        "archetype": "INTP"
+      },
+      {
+        "text": "Интуитивно предвидите изменения в военной стратегии и необходимость адаптации.",
+        "effects": {"S": -1, "N": 1},
+        "political_effects": {"Nelson Mandela": 1},
+        "archetype": "INFJ"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "scale": "TF",
+    "text": "Ваша страна рассматривает возможность вступления в международный союз. Как вы отнесётесь?",
+    "options": [
+      {
+        "text": "Поддержите вступление, исходя из прагматических выгод и безопасности.",
+        "effects": {"T": 2, "F": -2},
+        "political_effects": {"Joseph Stalin": 1},
+        "archetype": "ESTJ"
+      },
+      {
+        "text": "Выразите осторожность, учитывая возможные социальные и культурные последствия.",
+        "effects": {"T": 0, "F": 0},
+        "political_effects": {"Jimmy Carter": 1},
+        "archetype": "ISFJ"
+      },
+      {
+        "text": "Поддержите, подчёркивая важность международного сотрудничества и мира.",
+        "effects": {"T": -2, "F": 2},
+        "political_effects": {"George Washington": 1},
+        "archetype": "INFP"
+      },
+      {
+        "text": "Предложите тщательно проанализировать договоры и условия союза.",
+        "effects": {"T": 1, "F": -1},
+        "political_effects": {"Angela Merkel": 1},
+        "archetype": "INTJ"
+      },
+      {
+        "text": "Выразите поддержку с акцентом на этические и гуманитарные аспекты сотрудничества.",
+        "effects": {"T": -1, "F": 1},
+        "political_effects": {"Barack Obama": 1},
+        "archetype": "ENFJ"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "scale": "JP",
+    "text": "Вам поручают подготовить отчёт о ситуации в регионе с ограниченным временем. Как вы поступите?",
+    "options": [
+      {
+        "text": "Составите чёткий план и организуете работу для максимально эффективного результата.",
+        "effects": {"J": 2, "P": -2},
+        "political_effects": {"Joseph Stalin": 1},
+        "archetype": "ESTJ"
+      },
+      {
+        "text": "Дадите команде свободу выбора методов, контролируя только ключевые моменты.",
+        "effects": {"J": 0, "P": 0},
+        "political_effects": {"Francois Mitterrand": 1},
+        "archetype": "ENFJ"
+      },
+      {
+        "text": "Позволите импровизировать, рассчитывая на опыт и креативность коллег.",
+        "effects": {"J": -2, "P": 2},
+        "political_effects": {"Silvio Berlusconi": 1},
+        "archetype": "ESFP"
+      },
+      {
+        "text": "Проведёте регулярные совещания для координации и корректировки работы.",
+        "effects": {"J": 1, "P": -1},
+        "political_effects": {"Napoleon Bonaparte": 1},
+        "archetype": "ENTJ"
+      },
+      {
+        "text": "Будете гибко реагировать на изменения и адаптировать план по ходу работы.",
+        "effects": {"J": -1, "P": 1},
+        "political_effects": {"John F. Kennedy": 1},
+        "archetype": "ENFP"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "scale": "IE",
+    "text": "Вас приглашают выступить на массовом митинге. Как вы себя ведёте?",
+    "options": [
+      {
+        "text": "Откажетесь, предпочитая более приватные формы общения и обсуждения.",
+        "effects": {"I": 2, "E": -2},
+        "political_effects": {"Angela Merkel": 1},
+        "archetype": "ISTJ"
+      },
+      {
+        "text": "Выступите с краткой, но содержательной речью, избегая излишней экспрессии.",
+        "effects": {"I": 1, "E": -1},
+        "political_effects": {"Mahatma Gandhi": 1},
+        "archetype": "INFJ"
+      },
+      {
+        "text": "Будете энергичны и убедительны, стараясь вдохновить и мобилизовать аудиторию.",
+        "effects": {"I": -2, "E": 2},
+        "political_effects": {"Theodore Roosevelt": 1},
+        "archetype": "ENTP"
+      },
+      {
+        "text": "Используете личные истории и эмоциональные аргументы для воздействия на слушателей.",
+        "effects": {"I": -1, "E": 1},
+        "political_effects": {"Barack Obama": 1},
+        "archetype": "ENFJ"
+      },
+      {
+        "text": "Отвечаете на вопросы и комментарии, внимательно слушая и анализируя реакцию.",
+        "effects": {"I": 0, "E": 0},
+        "political_effects": {"Dwight Eisenhower": 1},
+        "archetype": "ISTJ"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "scale": "SN",
+    "text": "Вам предоставляют отчёт о настроениях в обществе по ключевым вопросам. Что для вас важнее?",
+    "options": [
+      {
+        "text": "Конкретные данные и факты, отражающие текущую ситуацию.",
+        "effects": {"S": 2, "N": -2},
+        "political_effects": {"Dwight Eisenhower": 1},
+        "archetype": "ISTJ"
+      },
+      {
+        "text": "Анализ тенденций и возможных изменений в будущем.",
+        "effects": {"S": -2, "N": 2},
+        "political_effects": {"Angela Merkel": 1},
+        "archetype": "INTJ"
+      },
+      {
+        "text": "Сравнение с историческими примерами и уроками прошлого.",
+        "effects": {"S": 1, "N": -1},
+        "political_effects": {"Elizabeth II": 1},
+        "archetype": "ISFJ"
+      },
+      {
+        "text": "Обсуждение с экспертами различных сценариев развития событий.",
+        "effects": {"S": 0, "N": 0},
+        "political_effects": {"Thomas Jefferson": 1},
+        "archetype": "INTP"
+      },
+      {
+        "text": "Интуитивное восприятие ситуации и поиск символов перемен.",
+        "effects": {"S": -1, "N": 1},
+        "political_effects": {"Nelson Mandela": 1},
+        "archetype": "INFJ"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "scale": "TF",
+    "text": "В парламенте обсуждается законопроект о реформе образования. Как вы голосуете?",
+    "options": [
+      {
+        "text": "Поддержите реформу, если она основана на рациональном анализе и данных.",
+        "effects": {"T": 2, "F": -2},
+        "political_effects": {"Joseph Stalin": 1},
+        "archetype": "ESTJ"
+      },
+      {
+        "text": "Выразите поддержку реформе, подчёркивая её социальное и гуманитарное значение.",
+        "effects": {"T": -2, "F": 2},
+        "political_effects": {"George Washington": 1},
+        "archetype": "INFP"
+      },
+      {
+        "text": "Предложите внести поправки для учёта интересов разных групп населения.",
+        "effects": {"T": 0, "F": 0},
+        "political_effects": {"Jimmy Carter": 1},
+        "archetype": "ISFJ"
+      },
+      {
+        "text": "Потребуете дополнительного анализа экономических и социальных последствий.",
+        "effects": {"T": 1, "F": -1},
+        "political_effects": {"Angela Merkel": 1},
+        "archetype": "INTJ"
+      },
+      {
+        "text": "Поддержите реформу, призывая к этическим и моральным ценностям в образовании.",
+        "effects": {"T": -1, "F": 1},
+        "political_effects": {"Barack Obama": 1},
+        "archetype": "ENFJ"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "scale": "JP",
+    "text": "Вам необходимо организовать работу по подготовке отчёта в условиях неопределённости. Как вы поступите?",
+    "options": [
+      {
+        "text": "Составите детальный план с чёткими сроками и задачами для команды.",
+        "effects": {"J": 2, "P": -2},
+        "political_effects": {"Joseph Stalin": 1},
+        "archetype": "ESTJ"
+      },
+      {
+        "text": "Дадите команде свободу выбора методов работы, контролируя только ключевые моменты.",
+        "effects": {"J": 0, "P": 0},
+        "political_effects": {"Francois Mitterrand": 1},
+        "archetype": "ENFJ"
+      },
+      {
+        "text": "Позволите команде импровизировать, рассчитывая на их опыт и инициативу.",
+        "effects": {"J": -2, "P": 2},
+        "political_effects": {"Silvio Berlusconi": 1},
+        "archetype": "ESFP"
+      },
+      {
+        "text": "Проведёте регулярные совещания для координации и корректировки работы.",
+        "effects": {"J": 1, "P": -1},
+        "political_effects": {"Napoleon Bonaparte": 1},
+        "archetype": "ENTJ"
+      },
+      {
+        "text": "Будете гибко реагировать на изменения и адаптировать план по ходу работы.",
+        "effects": {"J": -1, "P": 1},
+        "political_effects": {"John F. Kennedy": 1},
+        "archetype": "ENFP"
+      }
+    ]
+  }
+]
