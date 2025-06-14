@@ -75,7 +75,18 @@ async def send_question(message: Message, state: FSMContext):
         f"{q['text']}\n\n" +
         "\n".join([f"<b>{i+1}.</b> {opt['text']}" for i, opt in enumerate(q['options'])])
     )
-    sent = await message.answer(text, reply_markup=keyboard.as_markup())
+    try:
+        if "last_message_id" in data:
+            sent = await bot.edit_message_text(
+                chat_id=message.chat.id,
+                message_id=data["last_message_id"],
+                text=text,
+                reply_markup=keyboard.as_markup()
+            )
+        else:
+            raise Exception
+    except:
+        sent = await message.answer(text, reply_markup=keyboard.as_markup())
     await state.update_data(last_message_id=sent.message_id)
 
 @dp.callback_query(F.data.startswith("answer_"))
