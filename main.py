@@ -74,6 +74,14 @@ async def handle_answer(callback, state: FSMContext):
     current = data["current"]
     selected = int(callback.data.split("_")[1])
     q = questions[current]
+    # Проверка структуры вопроса
+    if "options" not in q or not isinstance(q["options"], list):
+        await callback.answer("Ошибка в вопросе.", show_alert=True)
+        return
+    # Проверка выбранного индекса
+    if selected < 0 or selected >= len(q["options"]):
+        await callback.answer("Некорректный выбор.", show_alert=True)
+        return
     answer = q["options"][selected]
     answers = data["answers"]
     answers.append({"scale": answer["scale"], "value": answer["value"]})
