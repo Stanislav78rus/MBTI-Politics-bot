@@ -59,17 +59,24 @@ async def start_quiz(callback, state: FSMContext):
 async def send_question(message: Message, state: FSMContext):
     data = await state.get_data()
     current = data["current"]
+    if "last_message_id" in data:
+        try:
+            await bot.delete_message(message.chat.id, data["last_message_id"])
+        except:
+            pass
     q = questions[current]
     keyboard = InlineKeyboardBuilder()
     for i, opt in enumerate(q["options"], 1):
         keyboard.button(text=str(i), callback_data=f"answer_{i-1}")
     keyboard.adjust(len(q["options"]))
+    keyboard.row(InlineKeyboardButton(text="◀️ Предыдущий вопрос", callback_data="previous"))
     text = (
         f"<b>Вопрос {current+1} из {len(questions)}</b>\n\n"
         f"{q['text']}\n\n" +
         "\n".join([f"<b>{i+1}.</b> {opt['text']}" for i, opt in enumerate(q['options'])])
     )
-    await message.answer(text, reply_markup=keyboard.as_markup())
+    sent = await message.answer(text, reply_markup=keyboard.as_markup())
+    await state.update_data(last_message_id=sent.message_id)
 
 @dp.callback_query(F.data.startswith("answer_"))
 async def handle_answer(callback, state: FSMContext):
@@ -111,6 +118,18 @@ async def handle_answer(callback, state: FSMContext):
         await state.update_data(current=current + 1)
         await send_question(callback.message, state)
     await callback.answer()
+    await state.update_data(last_message_id=callback.message.message_id)
+
+@dp.callback_query(F.data == "previous")
+async def go_previous(callback, state: FSMContext):
+    data = await state.get_data()
+    if data["current"] > 0:
+        data["current"] -= 1
+        if data["answers"]:
+            data["answers"].pop()
+        await state.set_data(data)
+        await send_question(callback.message, state)
+    await callback.answer()
 
 async def show_result(callback, state: FSMContext):
     data = await state.get_data()
@@ -149,7 +168,7 @@ async def show_result(callback, state: FSMContext):
         leaders_text = "🔎 Ближайшие к тебе исторические фигуры:\n\n"
         for pol in sorted_leaders:
             match_score = count_match(pol["type"], result_type)
-            match_percent = match_score * 25
+            match_percent = int(match_score / len(result_type) * 100)
             leaders_text += f"• {pol['name_ru']} — {pol['reason']} (совпадение {match_percent}%)\n"
         await callback.message.answer(leaders_text)
 
@@ -158,13 +177,13 @@ async def show_result(callback, state: FSMContext):
         ADMIN_ID,
         f"🗳 Новый тест политического типа\n"
         f"Тип: {result_type} — {result['title']}\n"
-        f"Пользователь: @{user.username or user.full_name} ({user.id})"
+        f"Пользователь: {user.full_name} (@{user.username or 'нет ника'})\nID: {user.id}"
     )
 
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
-        [InlineKeyboardButton(text="📜 Пройти хронику заново", callback_data="start_quiz")]
+        [InlineKeyboardButton(text="🔁 Пройти заново", callback_data="start_quiz")]
     ])
-    await callback.message.answer("Пожелаешь пройти путь заново?", reply_markup=keyboard)
+    await callback.message.answer("Пожелаешь примерить на себя новую роль?", reply_markup=keyboard)
 
 async def main():
     await bot.delete_webhook(drop_pending_updates=True)
