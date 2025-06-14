@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: MBTI-Politics-bot
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - fromGroup: MBTI-Politics-bot
