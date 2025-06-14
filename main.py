@@ -39,6 +39,8 @@ class QuizState(StatesGroup):
 @dp.message(F.text.lower() == "/start")
 async def start(message: Message, state: FSMContext):
     await state.clear()
+    await state.set_state(QuizState.current)
+    await state.set_data({"current": 0, "answers": []})
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="📜 Начать хронику", callback_data="start_quiz")]
     ])
@@ -49,7 +51,8 @@ async def start(message: Message, state: FSMContext):
 
 @dp.callback_query(F.data == "start_quiz")
 async def start_quiz(callback, state: FSMContext):
-    await state.update_data(current=0, answers=[])
+    await state.set_state(QuizState.current)
+    await state.set_data({"current": 0, "answers": []})
     await send_question(callback.message, state)
     await callback.answer()
 
@@ -70,6 +73,14 @@ async def send_question(message: Message, state: FSMContext):
 
 @dp.callback_query(F.data.startswith("answer_"))
 async def handle_answer(callback, state: FSMContext):
+    state_name = await state.get_state()
+    if state_name is None:
+        await callback.answer("Сессия устарела. Начни тест заново.", show_alert=True)
+        keyboard = InlineKeyboardMarkup(inline_keyboard=[
+            [InlineKeyboardButton(text="📜 Начать хронику", callback_data="start_quiz")]
+        ])
+        await callback.message.answer("🔁 Нажми кнопку ниже, чтобы начать заново:", reply_markup=keyboard)
+        return
     data = await state.get_data()
     if "current" not in data or "answers" not in data:
         await callback.answer("Сессия устарела. Пожалуйста, начни тест заново.", show_alert=True)
