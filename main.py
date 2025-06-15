@@ -59,11 +59,6 @@ async def start_quiz(callback, state: FSMContext):
 async def send_question(message: Message, state: FSMContext):
     data = await state.get_data()
     current = data["current"]
-    if "last_message_id" in data:
-        try:
-            await bot.delete_message(message.chat.id, data["last_message_id"])
-        except:
-            pass
     q = questions[current]
     keyboard = InlineKeyboardBuilder()
     for i, opt in enumerate(q["options"], 1):
@@ -75,9 +70,10 @@ async def send_question(message: Message, state: FSMContext):
         f"{q['text']}\n\n" +
         "\n".join([f"<b>{i+1}.</b> {opt['text']}" for i, opt in enumerate(q['options'])])
     )
+
     try:
         if "last_message_id" in data:
-            sent = await bot.edit_message_text(
+            await bot.edit_message_text(
                 chat_id=message.chat.id,
                 message_id=data["last_message_id"],
                 text=text,
@@ -87,7 +83,7 @@ async def send_question(message: Message, state: FSMContext):
             raise Exception
     except:
         sent = await message.answer(text, reply_markup=keyboard.as_markup())
-    await state.update_data(last_message_id=sent.message_id)
+        await state.update_data(last_message_id=sent.message_id)
 
 @dp.callback_query(F.data.startswith("answer_"))
 async def handle_answer(callback, state: FSMContext):
@@ -127,7 +123,12 @@ async def handle_answer(callback, state: FSMContext):
         await show_result(callback, state)
     else:
         await state.update_data(current=current + 1)
-        await send_question(callback.message, state)
+        data = await state.get_data()
+        message_id = data.get("last_message_id")
+        message = callback.message
+        if message_id and message.message_id != message_id:
+            message.message_id = message_id
+        await send_question(message, state)
     await callback.answer()
     await state.update_data(last_message_id=callback.message.message_id)
 
