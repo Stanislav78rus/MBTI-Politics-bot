@@ -158,12 +158,12 @@ async def show_result(callback, state: FSMContext):
 
     result = results[result_type]
 
-    # Отправляем результат типа
-    await callback.message.answer(
+    user_result_text = (
         f"<b>📘 Тип личности: {result_type}</b>\n"
         f"<b>{result['title']}</b>\n\n"
         f"{result['description']}"
     )
+    await callback.message.answer(user_result_text)
 
     # Формируем список исторических фигур
     notable = result.get("notable_politicians", [])
@@ -176,20 +176,22 @@ async def show_result(callback, state: FSMContext):
         key=lambda pol: count_match(pol["type"], result_type),
         reverse=True
     )
+
     if sorted_leaders:
         leaders_text = "🔎 Ближайшие к тебе исторические фигуры:\n\n"
         for pol in sorted_leaders:
             match_score = count_match(pol["type"], result_type)
-            match_percent = int(match_score / len(result_type) * 100)
+            match_percent = int(match_score / len(answers) * 100)
             leaders_text += f"• {pol['name_ru']} — {pol['reason']} (совпадение {match_percent}%)\n"
         await callback.message.answer(leaders_text)
+        user_result_text += "\n\n" + leaders_text
 
     user = callback.from_user
     await bot.send_message(
         ADMIN_ID,
         f"🗳 Новый тест политического типа\n"
-        f"Тип: {result_type} — {result['title']}\n"
-        f"Пользователь: {user.full_name} (@{user.username or 'нет ника'})\nID: {user.id}"
+        f"Пользователь: {user.full_name} (@{user.username or 'нет ника'})\nID: {user.id}\n\n"
+        + user_result_text
     )
 
     keyboard = InlineKeyboardMarkup(inline_keyboard=[
